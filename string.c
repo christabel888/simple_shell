@@ -10,7 +10,6 @@ int _strlen(char *s)
 int i = 0;
 if (!s)
 return (0);
-
 while (*s++)
 i++;
 return (i);
@@ -51,6 +50,7 @@ if (*needle++ != *haystack++)
 return (NULL);
 return ((char *)haystack);
 }
+
 
 /**
 * _strcat - concatenates two strings
