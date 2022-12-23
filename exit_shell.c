@@ -12,7 +12,6 @@ int exit_shell(data_shell *datash)
 	int is_digit;
 	int str_len;
 	int big_number;
-
 	if (datash->args[1] != NULL)
 	{
 		ustatus = _atoi(datash->args[1]);
@@ -24,7 +23,6 @@ int exit_shell(data_shell *datash)
 		{
 			get_error(datash, 2);
 			datash->status = 2;
-
 			return (1);
 		}
 		datash->status = (ustatus % 256);
