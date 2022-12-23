@@ -16,6 +16,7 @@ if (info->argv[1])  /* If there is an exit arguement */
 exitcheck = _erratoi(info->argv[1]);
 if (exitcheck == -1)
 {
+
 info->status = 2;
 print_error(info, "Illegal number: ");
 _eputs(info->argv[1]);
