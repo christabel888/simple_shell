@@ -12,7 +12,6 @@ void clear_info(info_t *info)
 	info->path = NULL;
 	info->argc = 0;
 }
-
 /**
  * set_info - initializes info_t struct
  * @info: struct address
@@ -28,7 +27,6 @@ void set_info(info_t *info, char **av)
 		info->argv = strtow(info->arg, " \t");
 		if (!info->argv)
 		{
-
 			info->argv = malloc(sizeof(char *) * 2);
 			if (info->argv)
 			{
