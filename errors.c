@@ -18,6 +18,7 @@ void _eputs(char *str)
 	}
 }
 
+
 /**
  * _eputchar - writes the character c to stderr
  * @c: The character to print
@@ -82,3 +83,4 @@ int _putsfd(char *str, int fd)
 	}
 	return (i);
 }
+
