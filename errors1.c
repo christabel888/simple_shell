@@ -43,7 +43,6 @@ _eputs(info->argv[0]);
 _eputs(": ");
 _eputs(estr);
 }
-
 /**
 * print_d - function prints a decimal (integer) number (base 10)
 * @input: the input
@@ -53,6 +52,7 @@ _eputs(estr);
 */
 int print_d(int input, int fd)
 {
+
 int (*__putchar)(char) = _putchar;
 int i, count = 0;
 unsigned int _abs_, current;
