@@ -30,6 +30,7 @@ j++;
 return (s);
 }
 
+
 /**
 **_strncat - concatenates two strings
 *@dest: the first string
@@ -56,7 +57,6 @@ if (j < n)
 dest[i] = '\0';
 return (s);
 }
-
 /**
 **_strchr - locates a character in a string
 *@s: the string to be parsed
