@@ -36,6 +36,7 @@ int unset_alias(info_t *info, char *str)
 	return (ret);
 }
 
+
 /**
  * set_alias - sets alias to string
  * @info: parameter struct
@@ -100,6 +101,7 @@ int _myalias(info_t *info)
 			print_alias(node);
 			node = node->next;
 		}
+
 		return (0);
 	}
 	for (i = 1; info->argv[i]; i++)
