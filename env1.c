@@ -21,6 +21,7 @@ int cmp_env_name(const char *nenv, const char *name)
 	return (i + 1);
 }
 
+
 /**
  * _getenv - get an environment variable
  * @name: name of the environment variable
@@ -49,6 +50,7 @@ char *_getenv(const char *name, char **_environ)
 	}
 	return (ptr_env + mov);
 }
+
 
 /**
  * _env - prints the evironment variable
