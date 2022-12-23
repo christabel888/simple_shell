@@ -12,6 +12,7 @@ ssize_t r = 0;
 int builtin_ret = 0;
 while (r != -1 && builtin_ret != -2)
 {
+
 clear_info(info);
 if (interactive(info))
 _puts("$ ");
@@ -64,6 +65,7 @@ builtin_table builtintbl[] = {
 {"alias", _myalias},
 {NULL, NULL}
 };
+
 
 for (i = 0; builtintbl[i].type; i++)
 if (_strcmp(info->argv[0], builtintbl[i].type) == 0)
